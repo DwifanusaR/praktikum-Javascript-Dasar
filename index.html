@@ -3,213 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kalkulator Nilai Rapor Kelas — Praktikum JavaScript Dasar PSTI UPI">
-    <title>Kalkulator Rapor — Praktikum JavaScript Dasar</title>
+
+    <meta name="description" content="Sistem Poin dan Keanggotaan Member Kedai Kopi">
+    <title>Sistem Member Kedai Kopi</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- ===== HEADER: Identitas Kelas & Praktikum ===== -->
+    <!-- HEADER -->
     <header class="hero-header">
         <div class="container hero-container">
+
             <div class="avatar-wrapper">
-                <!-- Inisial kelas ditampilkan di dalam lingkaran avatar -->
                 <div class="avatar-placeholder">
-                    <span>📊</span>
+                    <span>☕</span>
                 </div>
             </div>
+
             <div class="hero-info">
-                <!-- Nama sekolah ditampilkan sebagai badge di bagian atas -->
-                <div class="badge-kampus">SMA Negeri 1 Bandung</div>
-                <!-- Judul utama halaman (h1) -->
-                <h1 class="nama-profil">Kalkulator Nilai Rapor</h1>
-                <!-- Sub-judul: nama kelas dan mata pelajaran -->
-                <p class="sub-profil">Kelas XII IPA 1 — Praktikum JavaScript Dasar</p>
-                <!-- Tag-tag info tambahan -->
+                <div class="badge-kampus">
+                    KEDAI KOPI
+                </div>
+
+                <h1 class="nama-profil">
+                    Sistem Member Kedai Kopi
+                </h1>
+
+                <p class="sub-profil">
+                    Sistem Poin & Keanggotaan Member
+                </p>
+
                 <div class="meta-tags">
-                    <span class="tag">👨‍🏫 Guru: Pak Budi</span>
-                    <span class="tag">📚 3 Mata Pelajaran</span>
-                    <span class="tag tag-active">✅ Lab Aktif</span>
+                    <span class="tag">☕ Poin Kopi</span>
+                    <span class="tag">🍽️ Poin Makanan</span>
+                    <span class="tag tag-active">⭐ Member Aktif</span>
                 </div>
             </div>
+
         </div>
     </header>
 
-    <!-- ===== KONTEN UTAMA ===== -->
+
+    <!-- KONTEN UTAMA -->
     <main class="main-content container">
 
-        <!-- Kartu Instruksi: Cara Melihat Hasil JavaScript di Console -->
+        <!-- INFORMASI -->
         <section class="console-notice-card">
-            <div class="notice-icon">💡</div>
+
+            <div class="notice-icon">
+                ☕
+            </div>
+
             <div class="notice-text">
-                <h3>Cara Melihat Hasil Praktikum JavaScript</h3>
+                <h3>
+                    Sistem Poin & Keanggotaan Member
+                </h3>
+
                 <p>
-                    Tekan tombol <strong>F12</strong> di keyboard 
-                    (atau <em>Klik Kanan → Inspect → Tab Console</em>) 
-                    untuk melihat semua hasil <code>console.log()</code> dari 
-                    <strong>Aktivitas 1 s.d. 6</strong> di file <code>script.js</code>.
+                    Program JavaScript untuk menghitung total poin,
+                    menentukan tier member, dan menampilkan menu kedai kopi.
+                    Hasil program dapat dilihat melalui
+                    <strong>F12 → Console</strong>.
                 </p>
             </div>
+
         </section>
 
-        <!-- Grid 2 kolom: Kiri = Biodata & Alur Aktivitas, Kanan = Info Nilai & Daftar Siswa -->
+
+        <!-- GRID -->
         <div class="grid-layout">
 
-            <!-- ===== KOLOM KIRI ===== -->
+            <!-- KOLOM KIRI -->
             <div class="col-left">
 
-                <!-- Kartu: Biodata Guru & Kelas (Aktivitas 2) -->
-                <section class="card" id="biodata-card">
+                <!-- INFORMASI PROGRAM -->
+                <section class="card">
+
                     <div class="card-header">
-                        <h2>📌 Identitas Kelas (Aktivitas 2)</h2>
+                        <h2>
+                            ☕ Informasi Kedai Kopi
+                        </h2>
                     </div>
+
                     <div class="card-body">
+
                         <ul class="biodata-list">
+
                             <li>
-                                <span class="label">Nama Sekolah</span>
-                                <span class="value">SMA Negeri 1 Bandung</span>
+                                <span class="label">
+                                    Nama Kedai
+                                </span>
+
+                                <span class="value">
+                                    Kopi PSTI
+                                </span>
                             </li>
+
                             <li>
-                                <span class="label">Kelas</span>
-                                <span class="value">XII IPA 1</span>
+                                <span class="label">
+                                    Kasir
+                                </span>
+
+                                <span class="value">
+                                    Kak Dwifa
+                                </span>
                             </li>
+
                             <li>
-                                <span class="label">Guru Pengajar</span>
-                                <span class="value">Pak Budi</span>
+                                <span class="label">
+                                    Sistem
+                                </span>
+
+                                <span class="value">
+                                    Poin Member
+                                </span>
                             </li>
+
                             <li>
-                                <span class="label">Mata Pelajaran yang Dinilai</span>
-                                <span class="value">Matematika, B. Indonesia, IPAS</span>
+                                <span class="label">
+                                    Status
+                                </span>
+
+                                <span class="value">
+                                    Member Aktif
+                                </span>
                             </li>
-                            <li>
-                                <span class="label">Nama Siswa (dari prompt)</span>
-                                <span class="value">Cek di Console — F12 → Tab Console</span>
-                            </li>
+
                         </ul>
+
                     </div>
+
                 </section>
 
-                <!-- Kartu: Kalkulator Rata-rata Nilai (Aktivitas 3) -->
-                <section class="card" id="beban-belajar-card">
+
+                <!-- POIN -->
+                <section class="card">
+
                     <div class="card-header">
-                        <h2>🧮 Contoh Hitung Rata-rata (Aktivitas 3)</h2>
+                        <h2>
+                            ⭐ Perhitungan Poin
+                        </h2>
                     </div>
+
                     <div class="card-body">
-                        <!-- Tiga kotak statistik: nilai per mapel -->
+
                         <div class="stat-highlight">
+
                             <div class="stat-item">
-                                <span class="stat-number">80</span>
-                                <span class="stat-desc">Matematika</span>
+                                <span class="stat-number">
+                                    45
+                                </span>
+
+                                <span class="stat-desc">
+                                    Poin Kopi
+                                </span>
                             </div>
+
+
                             <div class="stat-item">
-                                <span class="stat-number">75</span>
-                                <span class="stat-desc">B. Indonesia</span>
+                                <span class="stat-number">
+                                    35
+                                </span>
+
+                                <span class="stat-desc">
+                                    Poin Makanan
+                                </span>
                             </div>
+
+
                             <div class="stat-item highlight-item">
-                                <span class="stat-number">81.67</span>
-                                <span class="stat-desc">Rata-rata</span>
+                                <span class="stat-number">
+                                    100
+                                </span>
+
+                                <span class="stat-desc">
+                                    Total Poin
+                                </span>
                             </div>
+
                         </div>
-                        <p class="footnote">* Nilai rata-rata = (80 + 75 + 90) ÷ 3 = 81.67</p>
+
+                        <p class="footnote">
+                            Total poin = 45 + 35 + 20 = 100
+                        </p>
+
                     </div>
+
                 </section>
 
             </div>
 
-            <!-- ===== KOLOM KANAN ===== -->
+
+            <!-- KOLOM KANAN -->
             <div class="col-right">
 
-                <!-- Kartu: Tabel Predikat Nilai (Aktivitas 4 & 5) -->
-                <section class="card" id="evaluasi-nilai-card">
+                <!-- TIER -->
+                <section class="card">
+
                     <div class="card-header">
-                        <h2>📊 Tabel Predikat Nilai (Aktivitas 4 & 5)</h2>
+                        <h2>
+                            🏆 Tier Keanggotaan
+                        </h2>
                     </div>
+
                     <div class="card-body">
-                        <!-- Tabel referensi predikat untuk memudahkan pemahaman -->
-                        <div class="grade-table-wrapper">
-                            <table class="data-table">
-                                <thead>
-                                    <tr>
-                                        <th>Rentang Nilai</th>
-                                        <th>Predikat</th>
-                                        <th>Keterangan</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>90 – 100</td>
-                                        <td>A</td>
-                                        <td>Sangat Baik</td>
-                                    </tr>
-                                    <tr>
-                                        <td>80 – 89</td>
-                                        <td>B</td>
-                                        <td>Baik</td>
-                                    </tr>
-                                    <tr>
-                                        <td>70 – 79</td>
-                                        <td>C</td>
-                                        <td>Cukup</td>
-                                    </tr>
-                                    <tr>
-                                        <td>&lt; 70</td>
-                                        <td>D</td>
-                                        <td>Perlu Perbaikan</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!-- Kotak hasil: contoh output dari script.js -->
+
                         <div class="result-box">
+
                             <div class="result-score">
-                                <span class="result-label">Rata-rata Contoh (Aktivitas 3)</span>
-                                <span class="result-val">81.67</span>
+
+                                <span class="result-label">
+                                    Tier Member
+                                </span>
+
+                                <span class="result-val">
+                                    Platinum
+                                </span>
+
                             </div>
+
                             <div class="result-badge badge-b">
-                                Predikat: <strong>B</strong> (Baik)
+                                Diskon 20%
                             </div>
+
                         </div>
+
+                        <p class="footnote" style="margin-top: 1rem;">
+                            Benefit: Diskon 20% + Gratis 1 Minuman Signature
+                        </p>
+
                     </div>
+
                 </section>
 
-                <!-- Kartu: Daftar Nama Siswa (Aktivitas 6) -->
-                <section class="card" id="matkul-card">
+
+                <!-- MENU -->
+                <section class="card">
+
                     <div class="card-header">
-                        <h2>👥 Daftar Siswa Kelas XII IPA 1 (Aktivitas 6)</h2>
+                        <h2>
+                            📋 Daftar Menu Kedai Kopi
+                        </h2>
                     </div>
+
                     <div class="card-body">
-                        <!-- Daftar siswa ini mencerminkan Array di script.js -->
+
                         <ol class="matkul-list">
-                            <li>Andi Saputra</li>
-                            <li>Bela Ramadhani</li>
-                            <li>Cahya Permana</li>
-                            <li>Dini Anggraeni</li>
-                            <li>Eka Nugraha</li>
+
+                            <li>
+                                Café Latte
+                            </li>
+
+                            <li>
+                                Es Kopi Susu Gula Aren
+                            </li>
+
+                            <li>
+                                Cappuccino
+                            </li>
+
+                            <li>
+                                Iced Americano
+                            </li>
+
+                            <li>
+                                Café Mocha
+                            </li>
+
                         </ol>
+
                         <p class="footnote" style="margin-top: 0.75rem;">
-                            * Nama-nama di atas disimpan dalam Array <code>daftarSiswa[]</code> di <code>script.js</code> 
-                            dan dicetak menggunakan <strong>for loop</strong> di Console.
+                            Total menu: 5
                         </p>
+
                     </div>
+
                 </section>
 
             </div>
+
         </div>
 
     </main>
 
-    <!-- ===== FOOTER ===== -->
+
+    <!-- FOOTER -->
     <footer class="footer">
+
         <div class="container">
-            <p>&copy; 2026 Praktikum JavaScript Dasar — PSTI Universitas Pendidikan Indonesia</p>
+
+            <p>
+                &copy; 2026 Sistem Member Kedai Kopi — Praktikum JavaScript Dasar PSTI
+            </p>
+
         </div>
+
     </footer>
 
-    <!-- Tag script wajib diletakkan di sini, tepat sebelum </body> -->
-    <!-- Menghubungkan file script.js ke halaman HTML Ketik Dibawah ini -->
-     
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
 </body>
 </html>
